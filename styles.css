@@ -1,0 +1,32 @@
+.header-bar{
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(15, 45, 82);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.Logo{
+  display: flex;
+  height: 10vh;
+  width: 5vw;
+  margin-left: 8vw;
+}
+.website-context{
+  margin-left: 1vw;
+  margin-bottom: 0;
+  color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: top;
+}
+.wcontext-second{
+  margin-left: 1vw;
+  margin-top: 0;
+  color: rgb(255, 215, 0);
+  font-family: sans-serif;
+  font-size: 12px;
+  vertical-align: top;
+}
