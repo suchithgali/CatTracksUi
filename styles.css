@@ -1,7 +1,7 @@
 .header-bar{
   height: 10vh;
   width: 100vw;
-  background-color: rgb(15, 45, 82);
+  background-color: rgb(0, 33, 71);
   position: absolute;
   top: 0;
   left: 0;
@@ -29,4 +29,58 @@
   font-family: sans-serif;
   font-size: 12px;
   vertical-align: top;
+}
+.header-pages{
+  display: flex;
+  margin-top: 4vh;
+  align-items: middle;
+  margin-left: 50vw;
+}
+.home-page, .liveRoutes-page, .schedules-page, .contact-page{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+.home-page:hover, .liveRoutes-page:hover, .schedules-page:hover, .contact-page:hover{
+  color: rgb(255, 215, 0);
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.home-trip-planner{
+  background-image: linear-gradient(to right, rgb(0, 33, 71), rgb(0, 85, 135));
+  width: 100vw;
+  height: 45vh;
+  margin-top: 8vh;
+  left: 0;
+  margin-left:0;
+  position: absolute;
+}
+.hometrip-text1{
+  margin-top: 5vh;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.hometrip-text1, .hometrip-text2{
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 0px;
+}
+.hometrip-text2{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.plan-box{
+  background-color: white;
+  height: 27vh;
+  width: 45vw;
+  margin: auto;
+  border-radius: 5px;
 }
