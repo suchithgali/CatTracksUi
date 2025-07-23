@@ -151,6 +151,36 @@ html, body {
   background-color: rgb(202, 138, 4);
   cursor: pointer;
 }
+.home-page-live-bus{
+  margin-top: 25px;
+}
 .home-live-bus-header{
   color: rgb(0, 33, 71);
+  margin-left: 12%;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.home-page-current-bus-header{
+  margin-top: 20px;
+  margin-left: 10%;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(0, 33, 71);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.home-current-buses-box{
+  height: 200px;
+  margin-left: 10%;
+  padding-left: 12px;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
