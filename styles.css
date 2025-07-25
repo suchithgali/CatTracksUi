@@ -171,16 +171,52 @@ html, body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
-  width: 80%;
+  width: 80vw;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 .home-current-buses-box{
-  height: 200px;
+  height: 270px;
   margin-left: 10%;
+  padding-top: 20px;
   padding-left: 12px;
-  width: 80%;
+  width: 80vw;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  overflow: hidden; /*because of margin collapse*/
+  margin-bottom: 10px;
+}
+.home-current-buses-mini-box1{
+  width: 340px;
+  height: 245px; 
+  background-color: white;
+  border: solid;
+  border-color: rgb(240, 242, 245);
+  border-width: 1px;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.home-current-buses-mini-box2{
+  width: 340px;
+  height: 245px;
+  background-color: white;
+  border: solid;
+  border-color: rgb(240, 242, 245);
+  border-width: 1px;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.home-current-buses-mini-box3{
+  width: 340px;
+  height: 245px;
+  background-color: white;
+  border: solid;
+  border-color: rgb(240, 242, 245);
+  border-width: 1px;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: inline-block;
 }
