@@ -33,6 +33,21 @@
 
         </div>
 
+        <!-- Trip Planning UI -->
+        <div class="trip-planner-container">
+          <div class="trip-planner-box">
+            <h2>Plan Your Trip</h2>
+            
+            <input type="text" placeholder="From" id="pickupLocation">
+            <input type="text" placeholder="To" id="dropoffLocation">
+            
+            <input type="text" placeholder="Time" id="time">
+            
+            
+            <button>Find Routes</button>
+          </div>
+        </div>
+
        <div id="map">
     <div class="leaflet-control coordinate"></div>
     </div>
@@ -83,10 +98,10 @@
 
   <style>
     #map {
-      height: 50vh;
-      width: 50%;
-      margin-left: 25vw;
-      margin-top: 60px;
+      height: 83vh;
+      width: 65vw;
+      margin-left: 30vw;
+      margin-top: 85px;
     }
 
     .coordinate{
@@ -104,12 +119,12 @@
     var map = L.map('map').setView([37.361217092553325, -120.432421122566], 13);
 
     //osm layers
-    var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&scale=4', {
       maxZoom: 20,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     }).addTo(map);
 
-    googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+    googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}&scale=4', {
       maxZoom: 20,
       subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
     });
@@ -161,6 +176,48 @@
     //document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng;
     //console.log('lat: ' + e.latlng.lat + ' lng: ' + e.latlng.lng);
   //})
+
+  // Trip Planner Functions
+  function swapLocations() {
+    const pickupInput = document.getElementById('pickupLocation');
+    const dropoffInput = document.getElementById('dropoffLocation');
+    
+    const temp = pickupInput.value;
+    pickupInput.value = dropoffInput.value;
+    dropoffInput.value = temp;
+  }
+
+  function planTrip() {
+    const pickup = document.getElementById('pickupLocation').value;
+    const dropoff = document.getElementById('dropoffLocation').value;
+    const timeOption = document.getElementById('tripTime').value;
+    const specificTime = document.getElementById('specificTime').value;
+    
+    if (!pickup || !dropoff) {
+      alert('Please enter both pickup and drop-off locations');
+      return;
+    }
+    
+    console.log('Planning trip:', {
+      pickup: pickup,
+      dropoff: dropoff,
+      timeOption: timeOption,
+      specificTime: specificTime
+    });
+    
+    // Here you would integrate with your routing API
+    alert(`Planning route from "${pickup}" to "${dropoff}"`);
+  }
+
+  // Show/hide time input based on selection
+  document.getElementById('tripTime').addEventListener('change', function(e) {
+    const timeInput = document.getElementById('specificTime');
+    if (e.target.value === 'now') {
+      timeInput.style.display = 'none';
+    } else {
+      timeInput.style.display = 'block';
+    }
+  });
 
   </script>
 </body>
