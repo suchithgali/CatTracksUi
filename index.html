@@ -57,9 +57,35 @@
                 <p class="when-info-text">
                   When
                 </p>
-                <input class = "from-info-box" type="text" placeholder="Current Location">
-                <input class = "to-info-box" type="text" placeholder="Destination">
-                <input class = "when-info-box" type="text">
+                
+                <input list="from-stop-list" id = "from-stops" name = "from-stops" placeholder="Type to search....">
+                <datalist id = "from-stop-list">
+                  <option value = "University Transit Center"></option>
+                  <option value = "Mercy Hospital / Tri-College (Southbound)"></option>
+                  <option value = "El Portal Plaza & G St. (Southbound)"></option>
+                  <option value = "G St. & W. Alexander Ave. (Paul's Place)"></option>
+                  <option value = "Granville Apartments"></option>
+                  <option value = "G St. & W. Alexander Ave. (76 Gas Station)"></option>
+                  <option value = "Rite Aid / Walgreens"></option>
+                  <option value = "El Portal Plaza & G St. (Northbound)"></option>
+                  <option value = "Mercy Hospital / Tri-College (Northbound)"></option>
+                  <option value = "M Circle Bus Stop"></option>
+                </datalist>
+
+                <input list="to-stop-list" id = "to-stops" name = "to-stops" placeholder="Type to search....">
+                <datalist id = "to-stop-list">
+                  <option value = "University Transit Center"></option>
+                  <option value = "Mercy Hospital / Tri-College (Southbound)"></option>
+                  <option value = "El Portal Plaza & G St. (Southbound)"></option>
+                  <option value = "G St. & W. Alexander Ave. (Paul's Place)"></option>
+                  <option value = "Granville Apartments"></option>
+                  <option value = "G St. & W. Alexander Ave. (76 Gas Station)"></option>
+                  <option value = "Rite Aid / Walgreens"></option>
+                  <option value = "El Portal Plaza & G St. (Northbound)"></option>
+                  <option value = "Mercy Hospital / Tri-College (Northbound)"></option>
+                  <option value = "M Circle Bus Stop"></option>
+                </datalist>
+
                 <a href="liveroutes.html">
                   <button class="trip-plan-button">
                   Plan My Trip

@@ -456,3 +456,14 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+#from-stops, #to-stops{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 33, 71);
+}
