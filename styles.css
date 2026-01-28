@@ -83,8 +83,8 @@ html, body {
 }
 .plan-box{
   background-color: white;
-  height: 26vh;
-  width: 45vw;
+  height: 28vh;
+  width: 50vw;
   margin: auto;
   border-radius: 5px;
 }
@@ -92,8 +92,8 @@ html, body {
   text-align: center;
 }
 .planbox-header-text{
-  text-align: center;
   margin-top: 16px;
+  height: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgb(0, 33, 71);
@@ -104,30 +104,31 @@ html, body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.from-info-text, .to-info-text{
-  display: inline-block;
-  margin-right: 2vw;
+.from-info-text, .to-info-text, .when-info-text{
   font-family: sans-serif;
-  font-size: 12px;
-  color: rgb(45, 44, 44);
-}
-.when-info-text{
+  font-size: 16px;
+  font-weight: 900;
+  width: 14vw;
+  text-align: center;
   display: inline-block;
   font-family: sans-serif;
-  font-size: 12px;
   color: rgb(45, 44, 44);
+  margin-bottom: 10px;
 }
+.to-info-text{
+  margin-left: 34px;
+}
+
 .trip-plan-button{
   height: 4.5vh;
-  width: 42vw;
-  margin-top: 2.5vh;
+  width: 47vw;
   margin-left: 1.5vw;
   border: none;
   border-radius: 5px;
   background-color: rgb(255, 215, 0);
   font-family: sans-serif;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
   transition: 0.2s;
 }
 .trip-plan-button:hover{
@@ -443,11 +444,14 @@ html, body {
 #from-stops, #to-stops{
   display: block;
   float: left;
-  margin-top: 20px;
-  margin-left: 10px;
-  width: 200px;
+  margin-top: 15px;
+  margin-left: 34px;
+  width: 180px;
   height: 40px;
   margin-bottom: 20px;
   border-radius: 10px;
   border: 2px solid rgb(0, 33, 71);
+}
+#to-stops{
+  margin-left: 40px;
 }
