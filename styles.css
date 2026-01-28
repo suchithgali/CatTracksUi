@@ -88,51 +88,34 @@ html, body {
   margin: auto;
   border-radius: 5px;
 }
+.planbox-header{
+  text-align: center;
+}
 .planbox-header-text{
+  text-align: center;
   margin-top: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
   background-color: rgb(0, 33, 71);
   color: white;
-  align-items: center;
   font-family: sans-serif;
   font-weight: 700;
   font-size: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.from-info-text{
-  margin-left: 7vw;
-  margin-right: 12.5vw;
-}
-.to-info-text{
-  margin-right: 12.5vw;
-}
-.from-info-text, .to-info-text, .when-info-text{
+.from-info-text, .to-info-text{
   display: inline-block;
+  margin-right: 2vw;
   font-family: sans-serif;
   font-size: 12px;
   color: rgb(45, 44, 44);
 }
-.from-info-box{
-  margin-left: 2vw;
-}
-.from-info-box, .to-info-box, .when-info-box{
+.when-info-text{
   display: inline-block;
-  margin-right: 1.5vw;
-  width: 12vw; 
-  height: 4vh;
-  border: 1px solid rgb(230, 231, 233);
-  background-color: white;
-  border-radius: 5px;
   font-family: sans-serif;
   font-size: 12px;
-  color: rgb(230, 231, 233);
-}
-.from-info-box::placeholder, .to-info-box::placeholder, .when-info-box::placeholder {
-  color: rgb(150, 150, 150); 
-  padding-left: 5px;
+  color: rgb(45, 44, 44);
 }
 .trip-plan-button{
   height: 4.5vh;
@@ -458,10 +441,11 @@ html, body {
 }
 
 #from-stops, #to-stops{
-  display: inline-block;
+  display: block;
+  float: left;
   margin-top: 20px;
-  margin-left: 30px;
-  width: 300px;
+  margin-left: 10px;
+  width: 200px;
   height: 40px;
   margin-bottom: 20px;
   border-radius: 10px;
